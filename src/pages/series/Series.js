@@ -5,16 +5,20 @@ import image from '../../image.jfif';
 const Series = () => {
 
     return (
-        <div className=''>
-            <div className='flex items-center h-16 px-20 bg-neutral-600'>
+        <div className='pb-48'>
+            <div className='flex items-center h-16 w-full fixed px-20 bg-neutral-600'>
                 <h1 className='text-2xl text-white font-medium'>Popular Series</h1>
             </div>
-            <div className='flex items-center mt-10 px-20'>
+            <div className='px-20 pt-20 flex flex-wrap justify-start'>
                 {Data.map(post => {
                     return (
-                        <button className='mr-10 flex flex-col h-24'>
-                            <img src={image} />
-                            <p className='mt-1 font-light'>{post.title}</p>
+                        <button className='mr-10 flex flex-col'>
+                            <div className='w-32'>
+                                <img src={image} alt='' />
+                            </div>
+                            <div>
+                                <p className='mb-3 font-light w-32'>{post.title}</p>
+                            </div>
                         </button>
                     )
                 })}
