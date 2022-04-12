@@ -16,7 +16,7 @@ const Home = ({ history }) => {
                 <button className='mr-10' onClick={() => handleBtnClick('series')}>
                     <div className='bg-neutral-700 h-36 px-6 relative flex items-center'>
                         <h1 className='font-extrabold text-white absolute bottom-14'>SERIES</h1>
-                        <img src={clapperboard} />
+                        <img src={clapperboard} alt='' />
                     </div>
                     <p className='mt-1 font-light'>Popular Series</p>
                 </button>
@@ -24,7 +24,7 @@ const Home = ({ history }) => {
                 <button className='mr-10' onClick={() => handleBtnClick('movies')}>
                     <div className='bg-neutral-700 h-36 px-6 relative flex items-center'>
                         <h1 className='font-extrabold text-white absolute bottom-14'>MOVIES</h1>
-                        <img src={clapperboard} />
+                        <img src={clapperboard} alt='' />
                     </div>
                     <p className='mt-1 font-light'>Popular Movies</p>
                 </button>
