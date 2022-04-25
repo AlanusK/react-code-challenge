@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col fixed bottom-0 left-0 right-0 bg-neutral-800 h-48'>
+        <div className='flex flex-col absolute bottom-0 w-full bg-neutral-800 h-48'>
             <div className='flex flex-col justify-center h-1/2 px-20 top-0 left-0 right-0'>
                 <h1 className='text-white text-sm py-3'>Home | Terms and Conditions | Privacy Policy | Collection Statement | Help | Manage Account</h1>
                 <h1 className='text-white text-sm'>Copyright © 2016 DEMO Streaming. All Rights Reserved</h1>
