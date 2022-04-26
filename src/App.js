@@ -4,9 +4,9 @@ import Routes from './Routes';
 
 function App() {
   return (
-    <div className='h-full flex flex-col'>
+    <div className='min-h-screen flex flex-col relative'>
       <Header/>
-      <div className='pt-16'>
+      <div className='pt-16 pb-48'>
         <Routes />
       </div>
       <Footer />
