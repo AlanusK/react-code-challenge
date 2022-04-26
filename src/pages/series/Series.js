@@ -10,9 +10,11 @@ const Series = () => {
                 <h1 className='text-2xl text-white font-medium'>Popular Series</h1>
             </div>
             <div className='px-20 pt-20 flex flex-wrap justify-start'>
-                {Data.map(post => {
+                {/* Before maping, check if Data exists */}
+                {Data && Data.map((post, index) => {
+                    if( post.releaseYear >= 2010)
                     return (
-                        <button className='mr-10 flex flex-col'>
+                        <button key={index} className='mr-10 flex flex-col'>
                             <div className='w-32'>
                                 <img src={image} alt='' />
                             </div>
