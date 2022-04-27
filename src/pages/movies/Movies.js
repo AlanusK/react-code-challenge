@@ -11,16 +11,17 @@ const Movies = () => {
             </div>
             <div className='px-20 pt-20 flex flex-wrap justify-start'>
                 {Data.map((post, index) => {
-                    return (
-                        <button key={index} className='mr-10 flex flex-col'>
-                            <div className='w-32'>
-                                <img src={image} alt='' />
-                            </div>
-                            <div>
-                                <p className='mb-3 font-light w-32'>{post.title}</p>
-                            </div>
-                        </button>
-                    )
+                    if (post.releaseYear >= 2010 && post.programType == 'movie')
+                        return (
+                            <button key={index} className='mr-10 flex flex-col'>
+                                <div className='w-32'>
+                                    <img src={post.images['Poster Art'].url} alt='' />
+                                </div>
+                                <div>
+                                    <p className='mb-3 font-light w-32'>{post.title}</p>
+                                </div>
+                            </button>
+                        )
                 })}
             </div>
         </div>
